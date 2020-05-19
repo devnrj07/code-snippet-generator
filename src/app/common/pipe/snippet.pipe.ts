@@ -22,13 +22,13 @@ export class SnippetPipe implements PipeTransform {
       return newSnippet.join("\n");
     }
 
-    if(editor === 'sublime'){
+    if (editor === 'sublime') {
       const regexpMagic = /(\$)([a-z(]+)([^$])/gi;
       const escapedSnippet = snippet.replace(regexpMagic, "\\$1$2$3");
       return escapedSnippet;
     }
-  
-  return snippet;
+
+    return snippet;
   }
 
 }

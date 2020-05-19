@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref":"./",
+            "baseHref": "./",
             "outputPath": "dist/snippet-generator",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -120,6 +120,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "snippet-generator"
 }
