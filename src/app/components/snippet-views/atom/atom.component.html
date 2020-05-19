@@ -1,0 +1,10 @@
+<div class="snippet" *ngIf = "$snippetData | async as snippet">
+<pre>
+
+    '{{snippet.description}}':
+      'prefix': '{{snippet.prefix}}'
+      'body': """
+      {{snippet.body}}
+      """
+</pre>
+</div>

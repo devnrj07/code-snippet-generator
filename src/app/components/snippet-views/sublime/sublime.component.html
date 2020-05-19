@@ -1,0 +1,12 @@
+<div class="snippet" *ngIf="$snippetData | async as snippet">
+    <pre>
+        &lt;snippet&gt;
+            &lt;content&gt;&lt;![CDATA[
+          {{snippet.body | snippet:'sublime'}}
+          ]]&gt;&lt;/content&gt;
+            &lt;tabTrigger&gt;{{snippet.prefix}}&lt;/tabTrigger&gt;
+            &lt;description&gt;{{snippet.description}}&lt;/description&gt;
+            
+            
+          &lt;/snippet&gt;
+</pre>
