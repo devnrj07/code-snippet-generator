@@ -11,6 +11,7 @@ import { VscodeComponent } from './components/snippet-views/vscode/vscode.compon
 import { SublimeComponent } from './components/snippet-views/sublime/sublime.component';
 import { AtomComponent } from './components/snippet-views/atom/atom.component';
 import { SnippetPipe } from './common/pipe/snippet.pipe';
+import { CopyToClipboardDirective } from './common/directive/copy-to-clipboard.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SnippetPipe } from './common/pipe/snippet.pipe';
     VscodeComponent,
     SublimeComponent,
     AtomComponent,
-    SnippetPipe
+    SnippetPipe,
+    CopyToClipboardDirective
   ],
   imports: [
     BrowserModule,

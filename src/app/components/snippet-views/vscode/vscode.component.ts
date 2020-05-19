@@ -19,4 +19,16 @@ export class VscodeComponent implements OnInit {
     console.log('atom', this.$snippetData)
   }
 
+  logError(error: Error): void {
+    console.group("Clipboard Error");
+    console.error(error);
+    console.groupEnd();
+  }
+
+  logSuccess(value: string): void {
+    console.group("Clipboard Success");
+    console.log(value);
+    console.groupEnd();
+  }
+
 }

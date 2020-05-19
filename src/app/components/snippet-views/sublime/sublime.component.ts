@@ -22,4 +22,15 @@ export class SublimeComponent implements OnInit {
     console.log('Sublime', this.$snippetData)
   }
 
+  logSuccess(value: string): void {
+    console.group("Clipboard Success");
+    console.log(value);
+    console.groupEnd();
+  }
+  logError(error: Error): void {
+    console.group("Clipboard Error");
+    console.error(error);
+    console.groupEnd();
+  }
+
 }

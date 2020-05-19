@@ -1,5 +1,5 @@
 <div class="snippet" *ngIf="$snippetData | async as snippet">
-  <pre>
+  <pre #snippetValue>
 
     "{{snippet.description}}": &#123;
     "prefix": "{{snippet.prefix}}",
@@ -8,5 +8,12 @@
     ],
     "description": "{{snippet.description}}"
     &#125;
-</pre>
+</pre >
+<button
+[clipboard]="snippetValue.textContent.trim()"
+(clipboardCopy)="logSuccess($event)"
+(clipboardError)="logError($event)">
+Copy Text
+</button>
+
 </div>

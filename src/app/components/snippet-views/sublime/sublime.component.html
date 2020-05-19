@@ -1,5 +1,5 @@
 <div class="snippet" *ngIf="$snippetData | async as snippet">
-  <pre>
+  <pre #snippetValue>
         &lt;snippet&gt;
             &lt;content&gt;&lt;![CDATA[
           {{snippet.body | snippet:'sublime'}}
@@ -10,3 +10,11 @@
             
           &lt;/snippet&gt;
 </pre>
+
+<button
+[clipboard]="snippetValue.textContent.trim()"
+(clipboardCopy)="logSuccess($event)"
+(clipboardError)="logError($event)">
+Copy Text
+</button>
+</div>
