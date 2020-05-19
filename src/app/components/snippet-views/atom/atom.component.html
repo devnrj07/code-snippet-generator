@@ -7,9 +7,10 @@
       {{snippet.body}}
       """
 </pre>
-  <button [clipboard]="snippetValue.textContent.trim()" 
-          (clipboardCopy)="logSuccess($event)"
-          (clipboardError)="logError($event)">
+  <button class="btn"
+        [clipboard]="snippetValue.textContent.trim()" 
+        (clipboardCopy)="logSuccess($event)"
+        (clipboardError)="logError($event)">
            Copy Text
   </button>
 </div>

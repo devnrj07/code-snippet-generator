@@ -9,7 +9,7 @@
     "description": "{{snippet.description}}"
     &#125;
 </pre >
-<button
+<button class="btn"
 [clipboard]="snippetValue.textContent.trim()"
 (clipboardCopy)="logSuccess($event)"
 (clipboardError)="logError($event)">

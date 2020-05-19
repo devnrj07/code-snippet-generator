@@ -1,0 +1,33 @@
+:host{
+    margin: 2rem;
+    border: .5rem solid grey;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.form-group-1{
+    flex:1 1 18%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+}
+
+.form-group-1 input{
+    width:28rem;
+    height: 2rem;
+    border: .2rem solid grey;
+}
+
+.form-group-2{
+    flex: 1 1 80%;
+
+
+}
+.form-group-2 textarea{
+    height:21rem;
+    width: 28rem;
+    border: .2rem solid grey;
+}

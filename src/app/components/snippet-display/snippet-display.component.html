@@ -1,13 +1,9 @@
 <div class="display-snippet-btns">
-    <li>
-        <a routerLink="atom">Atom</a>
-    </li>
-    <li>
-        <a routerLink="vscode">VsCode</a>
-    </li>
-    <li>
-        <a routerLink="sublime">Sublime</a>
-    </li>
+
+    <a routerLink="atom" (click)="applyTheme('atom')">Atom</a>
+    <a routerLink="vscode" (click)="applyTheme('vscode')">VsCode</a>
+    <a routerLink="sublime" (click)="applyTheme('sublime')">Sublime</a>
+
 </div>
 <div class="display-snippet-screen">
     <router-outlet></router-outlet>

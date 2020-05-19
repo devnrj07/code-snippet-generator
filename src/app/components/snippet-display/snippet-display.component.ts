@@ -12,4 +12,17 @@ export class SnippetDisplayComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  applyTheme(theme:string){
+    console.log('current theme', theme);
+    if(theme === 'atom'){
+    document.documentElement.style.setProperty('--background',  '#4eaa32' );
+    }else if(theme === 'sublime'){
+    document.documentElement.style.setProperty('--background',  '#ec9523' );
+    }else if(theme ==='vscode'){
+    document.documentElement.style.setProperty('--background',  '#288cdd' );
+    }else{
+      return;
+    }
+  }
+
 }
