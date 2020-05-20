@@ -15,7 +15,8 @@
 
 
     <div class="form-group-2">
-        <textarea name="snippet" 
+        <textarea #textareaRef
+                  name="snippet" 
                   placeholder="Your snippet ..." 
                   formControlName="snippet"
                   (keyup)="shareFormData($event)">

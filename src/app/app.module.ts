@@ -13,6 +13,7 @@ import { AtomComponent } from './components/snippet-views/atom/atom.component';
 import { SnippetPipe } from './common/pipe/snippet.pipe';
 import { CopyToClipboardDirective } from './common/directive/copy-to-clipboard.directive';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { CopyToClipboardDirective } from './common/directive/copy-to-clipboard.d
     SublimeComponent,
     AtomComponent,
     SnippetPipe,
-    CopyToClipboardDirective
+    CopyToClipboardDirective,
+    
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,12 @@
 :host{
-    margin: 2rem;
-    border: .5rem solid grey;
+    
     display: flex;
     justify-content: center;
     justify-items: center;
+    border: .4rem solid var(--border-color);
 }
 
 .form-group-1{
-    flex:1 1 18%;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -18,16 +17,36 @@
 .form-group-1 input{
     width:28rem;
     height: 2rem;
-    border: .2rem solid grey;
+    border: .2rem solid var(--border-color);
 }
 
-.form-group-2{
-    flex: 1 1 80%;
 
-
-}
 .form-group-2 textarea{
     height:21rem;
     width: 28rem;
-    border: .2rem solid grey;
+    border: .1rem solid var(--border-color);
+}
+
+@media screen and (min-width: 950px) {
+
+    :host{
+        margin-top: 50rem;
+    }
+    
+    .form-group-1{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .form-group-1 input{
+        width: 29.80rem;
+        height:5rem;
+        border: .01rem solid var(--border-color);
+    }
+    .form-group-2 textarea{
+        width:var(--max-width);
+        height:var(--max-height);
+        border: .2rem solid var(--border-color);
+    }
 }

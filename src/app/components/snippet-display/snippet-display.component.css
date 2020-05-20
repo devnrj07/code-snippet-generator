@@ -1,12 +1,11 @@
 :host{
+    
     display: flex;
     flex-direction: column;
-    height: 27rem;
     justify-content: center;
     align-items: center;
-    border: .5rem solid grey;
-    
-}
+    border: .4rem solid var(--border-color);
+ }
 
 .display-snippet-btns{
     display: flex;
@@ -21,40 +20,58 @@
     text-align: center;
     overflow: scroll;
     background-color: #fff;
-    border: .2rem solid grey;
+    border: .2rem solidvar(--border-color);
 }
 
 
 
-a {
-  background-color:#fff;
+.btn {
+  
   color:#333;
   height: 3rem;
-  width: 9.1rem;
-  padding-top: 1rem;
+  width: 9.4rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  border: .2rem solid grey;
-}
-
-a:hover {
-  background-color: #555;
-}
-
-a:active {
-  background-color:  var(--background);
-}
-
-a:visited {
-  
-}
-
-
-
-@media screen and (min-width: 900px) {
-  :host{
-    width: 30rem;
-    height: 40rem;
+  border: .1rem solid var(--border-color);
+  cursor: pointer;
+  background-color: #fff;
   }
+
+  .btn-atom{
+    background-color: var(--btn-secondary);
+  }
+  .btn-vscode{
+    background-color: var(--btn-primary);
+  }
+  .btn-sublime{
+    background-color: var(--btn-tertiary);
+  }
+
+
+
+
+
+@media screen and (min-width: 950px) {
+  
+  :host{
+    margin-top: 50rem;
+  }
+  
+  .btn{
+  height: 5rem;
+  width: 20rem;
+  }
+
+  .display-snippet-screen{
+  
+    height:var(--max-height);
+    width: var(--max-width);
+    text-align: center;
+    overflow: scroll;
+    background-color: #fff;
+    border: .2rem solid var(--border-color);
+}
+
+
 }

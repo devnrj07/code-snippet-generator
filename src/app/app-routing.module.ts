@@ -10,6 +10,7 @@ const routes: Routes = [
   {path:'', redirectTo:'dashboard', pathMatch:'full'},
   {path:'dashboard', component:DashboardComponent,
    children:[
+     {path:'', redirectTo:'vscode', pathMatch:'full'},
      {path:'vscode', component: VscodeComponent},
      {path:'sublime', component: SublimeComponent},
      {path:'atom', component:AtomComponent}

@@ -9,6 +9,16 @@
     --background: #288cdd;
     --background-secondary: #ec9523;
     --background-tertiary: #4eaa32;
+
+    --btn-primary: #288cdd;
+    --btn-secondary : #fff;
+    --btn-tertiary:  #fff;
+    --border-color: rgb(105, 145, 172);
+
+    --max-height: 50rem;
+    --max-width: 60rem;
+
+
     font-size: 62.5%;
 }
 
@@ -29,7 +39,6 @@ body {
 
   pre{
   flex: 1;
-  padding: 10px;
   font: inherit;
   resize: none;
   /* stylelint-disable */
@@ -44,5 +53,15 @@ body {
   @media screen and (min-width: 450px) {
     body {
       font-size: 1.6rem
+    }
+  }
+
+  @media screen and (min-width: 950px) {
+    body {
+      font-size: 1.8rem
+    }
+
+    pre{
+      font-size: 1.8rem;
     }
   }
