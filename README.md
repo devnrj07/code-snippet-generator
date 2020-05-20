@@ -1,15 +1,19 @@
-# SnippetGenerator
+# Snippet Generator
 
-A simple app to generate code snippets for top three editors VsCode, Atom and Sublime.
-
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
-
-
+A simple app to generate code snippets for top three editors VsCode, Atom and Sublime. 📜 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+clone this project `git clone https://github.com/devnrj07/code-snippet-generator.git`
+
+move inside the cloned directory `cd snippet-generator`
+
+install packages `npm i`
+
+Run `ng serve` for a dev server. 
+
+Navigate to `http://localhost:4200/`. 
+The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
