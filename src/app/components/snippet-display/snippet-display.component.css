@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     border: .4rem solid var(--border-color);
+    margin-top: 2em;
  }
 
 .display-snippet-btns{
@@ -55,7 +56,7 @@
 @media screen and (min-width: 950px) {
   
   :host{
-    margin-top: 50rem;
+    margin-top: 45rem;
   }
   
   .btn{

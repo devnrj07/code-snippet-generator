@@ -12,6 +12,7 @@ import { SublimeComponent } from './components/snippet-views/sublime/sublime.com
 import { AtomComponent } from './components/snippet-views/atom/atom.component';
 import { SnippetPipe } from './common/pipe/snippet.pipe';
 import { CopyToClipboardDirective } from './common/directive/copy-to-clipboard.directive';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { CopyToClipboardDirective } from './common/directive/copy-to-clipboard.d
     AtomComponent,
     SnippetPipe,
     CopyToClipboardDirective,
+    HeaderComponent,
     
   ],
   imports: [
