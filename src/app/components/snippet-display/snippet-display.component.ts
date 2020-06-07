@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,15 +8,15 @@ import { Component, OnInit} from '@angular/core';
 })
 export class SnippetDisplayComponent implements OnInit {
 
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  applyTheme(theme:string){
+  applyTheme(theme: string) {
     //console.log('current theme', theme);
-    if(theme === 'atom'){
+    /* if(theme === 'atom'){
     document.documentElement.style.setProperty('--background',  '#4eaa32' );
     document.documentElement.style.setProperty('--btn-primary','#fff');
     document.documentElement.style.setProperty('--btn-secondary','#4eaa32');
@@ -32,11 +32,7 @@ export class SnippetDisplayComponent implements OnInit {
     document.documentElement.style.setProperty('--background',  '#288cdd' );
     document.documentElement.style.setProperty('--btn-primary','#288cdd');
     document.documentElement.style.setProperty('--btn-secondary','#fff');
-    document.documentElement.style.setProperty('--btn-tertiary','#fff');
-
-    }else{
-      return;
+    document.documentElement.style.setProperty('--btn-tertiary','#fff'); */
     }
   }
-
-}
+  
