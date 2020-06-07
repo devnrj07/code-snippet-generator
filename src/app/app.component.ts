@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
 import { ShareFormDataService } from './services/share-form-data.service';
-
+import {themes} from '../app/common/model/themes'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,15 +10,14 @@ import { ShareFormDataService } from './services/share-form-data.service';
 export class AppComponent {
   title = 'snippet-generator';
 
-  constructor(private router: Router, private themeService: ShareFormDataService) {
+  constructor(private router: Router, private elementRef:ElementRef,) {
 
     router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
         // Navigation started.
-        console.log(event.url);
         const getParams = event.url.split('/');
-        const getTheCurrentTheme = getParams[0];
-
+        const getTheCurrentTheme = getParams[getParams.length-1];
+        console.log('theme', getTheCurrentTheme)
         //apply theme
         this.updateAppThemeWithRouteChange(getTheCurrentTheme);
 
@@ -27,8 +26,12 @@ export class AppComponent {
   }
 
 
-  updateAppThemeWithRouteChange(theme: String) {
-    this.themeService.updateAppTheme(theme);
+  updateAppThemeWithRouteChange(themeName) {
+     const currentTheme  = themes[themeName];
+    for (const key in currentTheme) {
+      // not safe, replace with renderer2 method
+      document.documentElement.style.setProperty(key, currentTheme[key]);
+    }
 
 
   }
